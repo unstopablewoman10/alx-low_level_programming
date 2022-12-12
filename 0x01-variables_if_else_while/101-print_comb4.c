@@ -9,20 +9,20 @@ int main(void)
 	int a;
 	int c;
 
-	for (i = 29; i < 39; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for (a = 29; a < 39; a++)
+		for (a = 48; a < 58; a++)
 		{
 			if (a > i)
 			{
-				for (c = 29; c < 39; c++)
+				for (c = 48; c < 58; c++)
 				{
 					if (c > a)
 					{
 						putchar(i);
 						putchar(a);
 						putchar(c);
-					if (i == 36 && a == 37 && c == 38)
+					if (i == 55 && a == 56 && c == 57)
 					{
 						break;
 					}
