@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - print buzz each number of 3 and 5
- * Return: Always 0
+ * main - print buzz each number of 3 and 5.
+ * Return: Always 0.
  */
 
 int main(void)
