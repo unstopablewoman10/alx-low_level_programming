@@ -24,6 +24,7 @@ int main(void)
 			printf("Buzz");
 		}
 		putchar(n == m ? '\n' : ' ');
+		n++;
 	}
 		return (0);
 }
