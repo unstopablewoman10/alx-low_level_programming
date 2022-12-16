@@ -7,11 +7,9 @@
 
 int main(void)
 {
-	int n;
+	int n = 1, m = 100;
 
-	n = 1;
-	printf("%d", n);
-	for (n = 2; n <= 100; n++)
+	while (n <= 100)
 	{
 		if ((n % 3 == 0) && (n % 5 == 0))
 		{
@@ -29,7 +27,7 @@ int main(void)
 		{
 			printf("%d", n);
 		}
+		putchar(n == m ? '\n' : ' ');
 	}
-	printf("\n");
 		return (0);
 }
