@@ -2,20 +2,24 @@
 
 /**
  * more_numbers - print more numbers
+ * Return: no return
  */
 
 void more_numbers(void)
 {
-	int a, b;
+	int a = 0, b = 14, i;
 
-	for (a = 1; a <= 10; a++)
+	for (i = 1; i <= 10; i++)
 	{
-		for (b = 0; b <= 14; b++)
+		while (a <= b)
 		{
-			_putchar(b > 9 ? (b / 10) + '0' : a + '0');
-			if (b >= 10)
+			_putchar(a > 9 ? (a / 10) + '0' : a + '0');
+
+			if (a > 9)
 			_putchar ((a % 10) + '0');
+			a++;
 		}
+		a = 0;
 		_putchar('\n');
 	}
 }
