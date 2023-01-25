@@ -1,47 +1,29 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
-/**
- * _strlen - Finds the length of a string.
- * @str: The string to be measured.
- *
- * Return: The length of the string.
- */
-int _strlen(char *str)
-{
-	int i;
 
-	for(i = 0; str[i]; i++)
-		;
-
-	return (i);
-}
 /**
  * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: always 0 (Success)
+ * @argc: n arguments
+ * @argv: args
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
-	unsigned long int a, b, res; 
-	
-	int len_a, len_b;
-
-	len_a = _strlen(argv[1]);
-	len_b = _strlen(argv[2]);
-
-	for (i = 0; i < )
-
+unsigned long mul;
+int i, j;
 	if (argc != 3)
+	{ printf("Error\n");
+	exit(98); }
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (98);
-	}
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{  printf("Error\n");
+			exit(98); }
+		}
 
-	res = mul(a, b);
-	printf("%d", res);
+	}
+	mul = atol(argv[1]) *  atol(argv[2]);
+	printf("%lu\n", mul);
+return (0);
 }
